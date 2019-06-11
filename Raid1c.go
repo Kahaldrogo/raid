@@ -1,10 +1,10 @@
-package Raid01
+package piscine_go
 
 import (
 	"fmt"
 )
 
-func printline( n,x,y int) {
+func printlinec( n,x,y int) {
 	if(x == 1){
 		fmt.Print("A")
 		for i:= 0; i<n-2 ;i++ {
@@ -35,8 +35,10 @@ func printline( n,x,y int) {
 	}
 }
 
-func Raid1e(x,y int)  {
-	for i:=1;i<=y;i++{
-		printline(x,i,y)
+func Raid1c(x,y int)  {
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlinec(x,i,y)
+		}
 	}
 }

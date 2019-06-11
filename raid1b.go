@@ -1,10 +1,10 @@
-package Raid01
+package piscine_go
 
 import (
 	"fmt"
 )
 
-func printline( n,x,y int) {
+func printlineb( n,x,y int) {
 	if(x == 1){
 		fmt.Print("/")
 		for i:= 0; i<n-2 ;i++ {
@@ -36,8 +36,10 @@ func printline( n,x,y int) {
 }
 
 func Raid1b(x,y int)  {
-	for i:=1;i<=y;i++{
-		printline(x,i,y)
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlineb(x,i,y)
+		}
 	}
 }
 
